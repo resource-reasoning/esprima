@@ -1987,7 +1987,8 @@ parseStatement: true, parseSourceElement: true */
     // Return true if provided expression is LeftHandSideExpression
 
     function isLeftHandSide(expr) {
-        return expr.type === Syntax.Identifier || expr.type === Syntax.MemberExpression;
+        return expr.type === Syntax.Identifier || expr.type === Syntax.MemberExpression 
+                             || expr.type === Syntax.Literal;
     }
 
     // 11.1.4 Array Initialiser
